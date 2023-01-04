@@ -1,5 +1,4 @@
 import example
+from database.service import Database
 
-
-for example in example.get_examples():
-    print(example)
+db = Database()
