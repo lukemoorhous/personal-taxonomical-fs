@@ -1,1 +1,1 @@
-from .data import ContentVersion, ContentFile
+from .data import DTO, ContentVersion, ContentFile
