@@ -1,4 +1,4 @@
 import example
-from database.service import Database
+from database.service import DATABASE
 
-db = Database()
+db = DATABASE()
