@@ -4,8 +4,8 @@ from data import DTO,ContentFile, ContentVersion
 database_location = 'taxonomical-database.db'
 
 CREATE_STRING = {
-    'ContentFile' : "CREATE TABLE ContentFile(id INTEGER primary key autoincrement, filename VARCHAR(255), filetype VARCHAR(255), fileextension: VARCHAR(25))",
-    'ContentVersion': "CREATE TABLE ContentVersion(id INTEGER primary key autoincrement, FOREIGN KEY(content_file) REFERENCES ContentFile(id), name VARCHAR(255), version VARCHAR(255), contents BLOB)"
+    'ContentFile' : "CREATE TABLE ContentFile(id INTEGER primary key autoincrement, filename TEXT, filetype TEXT, fileextension TEXT)",
+    'ContentVersion': "CREATE TABLE ContentVersion(id INTEGER primary key autoincrement, name TEXT, version TEXT, contents BLOB, content_file INTEGER, FOREIGN KEY(content_file) REFERENCES ContentFile(id))"
 }
 
 COLUMN_LIST = {

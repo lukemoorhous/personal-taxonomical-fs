@@ -34,3 +34,6 @@ class DATABASE_test(unittest.TestCase):
             caught = True
         
         self.assertTrue(caught)
+
+if __name__ == '__main__':
+    unittest.main()
